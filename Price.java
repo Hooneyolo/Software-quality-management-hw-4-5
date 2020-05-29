@@ -1,4 +1,3 @@
-
 /**
  * 여기에 ABC 클래스 설명을 작성하십시오.
  * 
@@ -8,16 +7,19 @@
 public class Price
 {
     int age; // 변수정의
-    public static int ticket(int age){
+    public static int ticket(int age, int peo){
         if(age >= 16){
+            return peo * 2000;
         }
-        else if(age >= 7){
+        if(age < 16 && age >= 7){
+            return peo * 900;
         }
-        else if(age >= 4){
+        if(age < 7 && age >= 4){
+            return peo * 400;
         }
-        else if(age >= 3){
+        if(age < 4 && age > 0){
+            return peo * 0;
         }
         return age;
     }
-    
 }
