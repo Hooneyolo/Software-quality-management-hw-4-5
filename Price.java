@@ -11,7 +11,13 @@ public class Price
     public static int ticket(int age){
         if(age >= 16){
         }
-        else if(age
+        else if(age >= 7){
+        }
+        else if(age >= 4){
+        }
+        else if(age >= 3){
+        }
+        return age;
     }
     
 }
